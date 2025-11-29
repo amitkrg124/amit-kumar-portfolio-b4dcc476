@@ -1,5 +1,14 @@
 import { ExternalLink } from 'lucide-react';
 
+// Import project screenshots
+import supriyaTravels from '@/assets/projects/supriya-travels.png';
+import sanehLibrary from '@/assets/projects/saneh-library.png';
+import krishnaFlowers from '@/assets/projects/krishna-flowers.png';
+import flexcare from '@/assets/projects/flexcare.png';
+import jdInterior from '@/assets/projects/jd-interior.png';
+import sugarpop from '@/assets/projects/sugarpop.png';
+import rollingBites from '@/assets/projects/rolling-bites.png';
+
 const Projects = () => {
   const projects = [
     {
@@ -7,56 +16,49 @@ const Projects = () => {
       description: "Travel booking and tour management platform",
       url: "https://supriya-travels.vercel.app",
       tags: ["Next.js", "Tailwind CSS"],
-      gradient: "from-blue-400 to-cyan-400",
+      image: supriyaTravels,
     },
     {
       name: "Saneh Library",
       description: "Digital library management system",
       url: "https://sanehlibrary.com",
       tags: ["React", "Node.js"],
-      gradient: "from-purple-400 to-pink-400",
+      image: sanehLibrary,
     },
     {
       name: "Krishna Flowers",
       description: "E-commerce platform for flower delivery",
       url: "https://krishna-flowers.vercel.app",
       tags: ["Next.js", "E-commerce"],
-      gradient: "from-pink-400 to-rose-400",
-    },
-    {
-      name: "ConnectAI",
-      description: "AI-powered communication platform",
-      url: "https://connct.ai",
-      tags: ["React", "AI Integration"],
-      gradient: "from-indigo-400 to-violet-400",
+      image: krishnaFlowers,
     },
     {
       name: "Flexcare",
       description: "Healthcare management solution",
       url: "https://flexcare.vercel.app",
       tags: ["Next.js", "Healthcare"],
-      gradient: "from-emerald-400 to-teal-400",
+      image: flexcare,
     },
     {
       name: "JD Interior",
       description: "Interior design portfolio showcase",
       url: "https://jd-interior.vercel.app",
       tags: ["React", "Portfolio"],
-      gradient: "from-amber-400 to-orange-400",
+      image: jdInterior,
     },
     {
       name: "SugarPop",
       description: "Sweet shop e-commerce website",
       url: "https://sugarpop.vercel.app",
       tags: ["Next.js", "E-commerce"],
-      gradient: "from-pink-400 to-fuchsia-400",
+      image: sugarpop,
     },
     {
       name: "Rolling Bites",
       description: "Food delivery and restaurant platform",
       url: "https://rolling-bites.vercel.app",
       tags: ["React", "Food Tech"],
-      gradient: "from-orange-400 to-red-400",
+      image: rollingBites,
     },
   ];
 
@@ -78,15 +80,14 @@ const Projects = () => {
               className="project-card group"
             >
               {/* Project Preview */}
-              <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+              <div className="h-48 relative overflow-hidden bg-muted">
+                <img 
+                  src={project.image} 
+                  alt={`${project.name} screenshot`}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300 flex items-center justify-center">
-                  <ExternalLink className="w-8 h-8 text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-                {/* Mock browser elements */}
-                <div className="absolute top-3 left-3 flex gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-white/30"></div>
-                  <div className="w-2.5 h-2.5 rounded-full bg-white/30"></div>
-                  <div className="w-2.5 h-2.5 rounded-full bg-white/30"></div>
+                  <ExternalLink className="w-8 h-8 text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" />
                 </div>
               </div>
 
