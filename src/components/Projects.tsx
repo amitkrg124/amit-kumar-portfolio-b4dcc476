@@ -1,4 +1,5 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 // Import project screenshots
 import supriyaTravels from '@/assets/projects/supriya-travels.png';
@@ -8,9 +9,17 @@ import flexcare from '@/assets/projects/flexcare.png';
 import jdInterior from '@/assets/projects/jd-interior.png';
 import sugarpop from '@/assets/projects/sugarpop.png';
 import rollingBites from '@/assets/projects/rolling-bites.png';
+import connectai from '@/assets/projects/connectai.png';
 
 const Projects = () => {
   const projects = [
+    {
+      name: "ConnectAI",
+      description: "AI-powered digital business card platform",
+      url: "https://connct.ai",
+      tags: ["React", "AI Integration"],
+      image: connectai,
+    },
     {
       name: "Supriya Travels",
       description: "Travel booking and tour management platform",
@@ -110,6 +119,17 @@ const Projects = () => {
               </div>
             </a>
           ))}
+        </div>
+
+        {/* View More Projects */}
+        <div className="mt-12 text-center">
+          <p className="text-muted-foreground mb-4">And many more projects...</p>
+          <Button variant="outline" className="group" asChild>
+            <a href="https://github.com/amitkrg124" target="_blank" rel="noopener noreferrer">
+              View All Projects on GitHub
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
