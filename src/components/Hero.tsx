@@ -13,13 +13,13 @@ const Hero = () => {
             </p>
             
             <h1 className="heading-xl mb-2 animate-fade-up delay-100">
-              <span className="block text-foreground">WEBSITE</span>
+              <span className="block text-foreground">SENIOR REACT JS</span>
               <span className="block text-primary">DEVELOPER</span>
             </h1>
             
             <p className="text-body max-w-md mb-6 animate-fade-up delay-200">
-              React.js & Next.js Specialist with 5+ years of experience building 
-              high-performance, scalable web applications.
+              React.js Specialist with 4+ years of experience building 
+              high-performance, scalable web & mobile applications.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12 animate-fade-up delay-300">
@@ -32,8 +32,8 @@ const Hero = () => {
             </div>
 
             <div className="animate-fade-up delay-400">
-              <p className="text-xs text-muted-foreground mb-2">5+ Years Experience</p>
-              <p className="font-semibold text-lg">NEO HIVES IT SOLUTIONS</p>
+              <p className="text-xs text-muted-foreground mb-2">4+ Years Experience</p>
+              <p className="font-semibold text-lg">RSNG INFO SOLUTIONS PVT LTD</p>
               <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 <span className="text-sm font-medium">Available for Projects</span>

@@ -1,18 +1,32 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Full-Stack Developer",
-      company: "Neo Hives IT Solutions",
-      period: "2020 - Present",
-      description: "Leading development of scalable web applications using React.js and Next.js. Building AI-powered automation workflows and managing end-to-end project delivery.",
-      highlights: ["React.js", "Next.js", "Node.js", "AI Integration"],
+      title: "Senior Software Engineer (ReactJS)",
+      company: "RSNG Info Solutions Private Limited",
+      period: "April 2025 - Present",
+      description: "Leading development of enterprise web applications using React.js ecosystem. Architecting scalable solutions and mentoring junior developers.",
+      highlights: ["React.js", "TypeScript", "Node.js", "Team Leadership"],
     },
     {
-      title: "Frontend Developer",
-      company: "Freelance",
-      period: "2019 - 2020",
-      description: "Delivered 20+ client projects ranging from e-commerce platforms to healthcare dashboards. Specialized in responsive design and performance optimization.",
-      highlights: ["JavaScript", "React", "CSS3", "Responsive Design"],
+      title: "Web and Application Developer (ReactJS)",
+      company: "Pipeline Velocity Private Limited",
+      period: "January 2023 - September 2024",
+      description: "Developed and maintained web applications with focus on performance optimization and user experience. Implemented complex features and integrations.",
+      highlights: ["React.js", "Redux", "REST APIs", "Performance Optimization"],
+    },
+    {
+      title: "React JS + React Native Developer",
+      company: "Netheus Technologies Private Limited",
+      period: "April 2022 - December 2022",
+      description: "Built cross-platform mobile and web applications using React Native and React.js. Delivered responsive UI components and integrated backend services.",
+      highlights: ["React Native", "React.js", "Mobile Development", "Cross-Platform"],
+    },
+    {
+      title: "Software Engineer",
+      company: "Coding Expo Technologies",
+      period: "February 2021 - April 2022",
+      description: "Started professional journey building web applications. Gained hands-on experience in frontend development and modern JavaScript frameworks.",
+      highlights: ["JavaScript", "React.js", "HTML5", "CSS3"],
     },
   ];
 
@@ -25,7 +39,7 @@ const Experience = () => {
           </div>
           
           <div className="md:w-2/3">
-            <p className="text-sm text-muted-foreground mb-8">Roles and Contribution</p>
+            <p className="text-sm text-muted-foreground mb-8">4+ Years of Professional Journey</p>
             
             <div className="space-y-8">
               {experiences.map((exp, index) => (
@@ -37,7 +51,7 @@ const Experience = () => {
                       <h3 className="font-semibold text-lg">{exp.title}</h3>
                       <p className="text-primary font-medium">{exp.company}</p>
                     </div>
-                    <span className="text-2xl md:text-3xl font-bold text-muted-foreground/50">
+                    <span className="text-sm md:text-base font-semibold text-muted-foreground/70 whitespace-nowrap">
                       {exp.period}
                     </span>
                   </div>

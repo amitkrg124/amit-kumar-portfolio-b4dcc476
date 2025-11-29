@@ -2,7 +2,7 @@ import { Briefcase, Code, Layers, Zap } from 'lucide-react';
 
 const About = () => {
   const highlights = [
-    { icon: Briefcase, label: "5+ Years", sublabel: "Experience" },
+    { icon: Briefcase, label: "4+ Years", sublabel: "Experience" },
     { icon: Code, label: "50+", sublabel: "Projects" },
     { icon: Layers, label: "6+", sublabel: "Industries" },
     { icon: Zap, label: "100%", sublabel: "Commitment" },
@@ -25,9 +25,9 @@ const About = () => {
           <div>
             <h2 className="section-title">About</h2>
             <p className="text-body mb-6">
-              I'm a passionate Full-Stack Web Developer specializing in React.js and Next.js 
-              with over 5 years of professional experience. I build high-performance, 
-              scalable web applications that deliver exceptional user experiences.
+              I'm a passionate Senior React.js Developer with over 4 years of professional experience. 
+              I specialize in building high-performance, scalable web and mobile applications 
+              that deliver exceptional user experiences.
             </p>
             <p className="text-body mb-8">
               My expertise spans across modern JavaScript frameworks, backend development, 
