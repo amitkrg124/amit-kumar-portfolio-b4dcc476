@@ -51,14 +51,14 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-400, 300]),
+    useTransform(scrollYProgress, [0, 0.2], [-200, 200]),
     springConfig
   );
 
   return (
     <div
       ref={ref}
-      className="h-[200vh] py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[180vh] py-10 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       {header}
       <motion.div

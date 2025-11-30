@@ -33,7 +33,7 @@ const ProjectsParallax = () => {
   ];
 
   const HeaderContent = () => (
-    <div className="max-w-7xl relative mx-auto py-12 md:py-20 px-4 w-full left-0 top-0">
+    <div className="max-w-7xl relative mx-auto py-8 md:py-12 px-4 w-full left-0 top-0">
       <h2 className="text-2xl md:text-7xl font-bold text-foreground">
         Featured <br /> Projects
       </h2>
