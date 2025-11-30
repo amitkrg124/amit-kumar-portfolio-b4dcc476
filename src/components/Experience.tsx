@@ -1,76 +1,100 @@
+import { Timeline } from '@/components/ui/timeline';
+
 const Experience = () => {
-  const experiences = [
+  const timelineData = [
     {
-      title: "Senior Software Engineer (ReactJS)",
-      company: "RSNG Info Solutions Private Limited",
-      period: "April 2025 - Present",
-      description: "Leading development of enterprise web applications using React.js ecosystem. Architecting scalable solutions and mentoring junior developers.",
-      highlights: ["React.js", "TypeScript", "Node.js", "Team Leadership"],
+      title: "2025",
+      content: (
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg md:text-2xl font-bold text-foreground">Senior Software Engineer (ReactJS)</h3>
+            <p className="text-primary font-semibold text-sm md:text-base">RSNG Info Solutions Private Limited</p>
+            <span className="text-xs md:text-sm text-muted-foreground">April 2025 - Present</span>
+          </div>
+          <p className="text-muted-foreground text-xs md:text-sm font-normal mb-6">
+            Leading development of enterprise web applications using React.js ecosystem. Architecting scalable solutions and mentoring junior developers.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "TypeScript", "Node.js", "Team Leadership"].map((tech) => (
+              <span key={tech} className="tech-badge">{tech}</span>
+            ))}
+          </div>
+        </div>
+      ),
     },
     {
-      title: "Web and Application Developer (ReactJS)",
-      company: "Pipeline Velocity Private Limited",
-      period: "January 2023 - September 2024",
-      description: "Developed and maintained web applications with focus on performance optimization and user experience. Implemented complex features and integrations.",
-      highlights: ["React.js", "Redux", "REST APIs", "Performance Optimization"],
+      title: "2023-24",
+      content: (
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg md:text-2xl font-bold text-foreground">Web and Application Developer (ReactJS)</h3>
+            <p className="text-primary font-semibold text-sm md:text-base">Pipeline Velocity Private Limited</p>
+            <span className="text-xs md:text-sm text-muted-foreground">January 2023 - September 2024</span>
+          </div>
+          <p className="text-muted-foreground text-xs md:text-sm font-normal mb-6">
+            Developed and maintained web applications with focus on performance optimization and user experience. Implemented complex features and integrations.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Redux", "REST APIs", "Performance Optimization"].map((tech) => (
+              <span key={tech} className="tech-badge">{tech}</span>
+            ))}
+          </div>
+        </div>
+      ),
     },
     {
-      title: "React JS + React Native Developer",
-      company: "Netheus Technologies Private Limited",
-      period: "April 2022 - December 2022",
-      description: "Built cross-platform mobile and web applications using React Native and React.js. Delivered responsive UI components and integrated backend services.",
-      highlights: ["React Native", "React.js", "Mobile Development", "Cross-Platform"],
+      title: "2022",
+      content: (
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg md:text-2xl font-bold text-foreground">React JS + React Native Developer</h3>
+            <p className="text-primary font-semibold text-sm md:text-base">Netheus Technologies Private Limited</p>
+            <span className="text-xs md:text-sm text-muted-foreground">April 2022 - December 2022</span>
+          </div>
+          <p className="text-muted-foreground text-xs md:text-sm font-normal mb-6">
+            Built cross-platform mobile and web applications using React Native and React.js. Delivered responsive UI components and integrated backend services.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["React Native", "React.js", "Mobile Development", "Cross-Platform"].map((tech) => (
+              <span key={tech} className="tech-badge">{tech}</span>
+            ))}
+          </div>
+        </div>
+      ),
     },
     {
-      title: "Software Engineer",
-      company: "Coding Expo Technologies",
-      period: "February 2021 - April 2022",
-      description: "Started professional journey building web applications. Gained hands-on experience in frontend development and modern JavaScript frameworks.",
-      highlights: ["JavaScript", "React.js", "HTML5", "CSS3"],
+      title: "2021",
+      content: (
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg md:text-2xl font-bold text-foreground">Software Engineer</h3>
+            <p className="text-primary font-semibold text-sm md:text-base">Coding Expo Technologies</p>
+            <span className="text-xs md:text-sm text-muted-foreground">February 2021 - April 2022</span>
+          </div>
+          <p className="text-muted-foreground text-xs md:text-sm font-normal mb-6">
+            Started professional journey building web applications. Gained hands-on experience in frontend development and modern JavaScript frameworks.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {["JavaScript", "React.js", "HTML5", "CSS3"].map((tech) => (
+              <span key={tech} className="tech-badge">{tech}</span>
+            ))}
+          </div>
+        </div>
+      ),
     },
   ];
 
   return (
-    <section id="experience" className="section-padding bg-light-bg">
-      <div className="container-narrow">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
-          <div className="md:w-1/3">
-            <h2 className="section-title">Experience</h2>
-          </div>
-          
-          <div className="md:w-2/3">
-            <p className="text-sm text-muted-foreground mb-8">4+ Years of Professional Journey</p>
-            
-            <div className="space-y-8">
-              {experiences.map((exp, index) => (
-                <div key={index} className="relative pl-6 border-l-2 border-primary/30">
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full"></div>
-                  
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
-                    <div>
-                      <h3 className="font-semibold text-lg">{exp.title}</h3>
-                      <p className="text-primary font-medium">{exp.company}</p>
-                    </div>
-                    <span className="text-sm md:text-base font-semibold text-muted-foreground/70 whitespace-nowrap">
-                      {exp.period}
-                    </span>
-                  </div>
-                  
-                  <p className="text-body mb-4">{exp.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {exp.highlights.map((highlight) => (
-                      <span key={highlight} className="tech-badge">
-                        {highlight}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+    <section id="experience" className="bg-background">
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+        <h2 className="text-lg md:text-4xl mb-4 text-foreground max-w-4xl font-bold">
+          Professional Journey
+        </h2>
+        <p className="text-muted-foreground text-sm md:text-base max-w-sm">
+          4+ Years of building impactful web and mobile applications across diverse industries.
+        </p>
       </div>
+      <Timeline data={timelineData} />
     </section>
   );
 };
