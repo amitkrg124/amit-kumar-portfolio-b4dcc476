@@ -11,14 +11,14 @@ const Hero = () => {
             <p className="text-sm font-medium text-muted-foreground mb-4 animate-fade-up">
               I am Amit Kumar
             </p>
-            
+
             <h1 className="heading-xl mb-2 animate-fade-up delay-100">
-              <span className="block text-foreground">SENIOR REACT JS</span>
+              <span className="block text-foreground">REACT JS</span>
               <span className="block text-primary">DEVELOPER</span>
             </h1>
-            
+
             <p className="text-body max-w-md mb-6 animate-fade-up delay-200">
-              React.js Specialist with 4+ years of experience building 
+              React.js Specialist with 4+ years of experience building
               high-performance, scalable web & mobile applications.
             </p>
 
@@ -47,7 +47,7 @@ const Hero = () => {
               <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/20">
                 <img
                   src={profilePhoto}
-                  alt="Amit Kumar - Website Developer"
+                  alt="Amit Kumar - Frontend Developer"
                   className="w-full h-full object-cover"
                 />
               </div>

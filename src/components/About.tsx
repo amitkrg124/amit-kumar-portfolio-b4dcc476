@@ -25,14 +25,14 @@ const About = () => {
           <div>
             <h2 className="section-title">About</h2>
             <p className="text-body mb-6">
-              I'm a passionate Senior React.js Developer with over 4 years of professional experience. 
-              I specialize in building high-performance, scalable web and mobile applications 
+              I'm a passionate Senior React.js Developer with over 4 years of professional experience.
+              I specialize in building high-performance, scalable web and mobile applications
               that deliver exceptional user experiences.
             </p>
             <p className="text-body mb-8">
-              My expertise spans across modern JavaScript frameworks, backend development, 
-              database design, and AI automation workflows. I've successfully delivered 
-              projects across diverse industries, helping businesses transform their 
+              My expertise spans across modern JavaScript frameworks, backend development,
+              database design, and AI automation workflows. I've successfully delivered
+              projects across diverse industries, helping businesses transform their
               digital presence.
             </p>
 
@@ -60,7 +60,7 @@ const About = () => {
         {/* Achievements */}
         <div className="flex flex-wrap gap-4 mt-12 justify-center">
           <div className="px-6 py-3 bg-orange-light rounded-full border border-primary/20">
-            <span className="text-sm font-medium">⭐ Full-Stack Expert</span>
+            <span className="text-sm font-medium">⭐ Frontend Expert</span>
           </div>
           <div className="px-6 py-3 bg-orange-light rounded-full border border-primary/20">
             <span className="text-sm font-medium">🚀 Performance Focused</span>
